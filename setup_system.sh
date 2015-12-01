@@ -16,5 +16,5 @@ apt-get install -y mdadm
 #apt-get install -y openjdk-8-jdk 
 
 
-./setup_networking.sh
+#./setup_networking.sh
 #./setup_user.sh ubuntu
