@@ -2,7 +2,21 @@ set -x
 
 echo '"\e[A": history-search-backward' > ~/.inputrc
 echo '"\e[B": history-search-forward' >> ~/.inputrc
-cp .inputrc /home/ubuntu
+cp ~/.inputrc /home/ubuntu/.
+chown ubuntu:ubuntu /home/ubuntu/.inputrc
+
+echo "syntax enable" >> ~/.vimrc
+echo "set background=dark" >> ~/.vimrc
+echo "set tabstop=4 shiftwidth=4 expandtab" >> ~/.vimrc
+echo "set ruler" >> ~/.vimrc
+echo "set pastetoggle=<F2>" >> ~/.vimrc
+echo "set relativenumber" >> ~/.vimrc
+echo "inoremap {<cr> {<cr>}<c-o>O<tab>" >> ~/.vimrc
+echo "inoremap [<cr> [<cr>]<c-o>O<tab>" >> ~/.vimrc
+echo "inoremap (<cr> (<cr>)<c-o>O<tab>" >> ~/.vimrc
+
+cp ~/.vimrc /home/ubuntu/.
+chown ubuntu:ubuntu /home/ubuntu/.vimrc
 
 apt-get install -y vim bc git wget
 apt-get install -y tmux ed nmon dstat htop time sysstat fio
