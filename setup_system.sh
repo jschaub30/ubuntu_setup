@@ -34,7 +34,7 @@ apt-get install -y mdadm
 #apt-get install -y ioping
 #apt-get install -y r-base 
 #apt-get install -y maven # sometimes
-#apt-get install -y openjdk-8-jdk 
+apt-get install -y openjdk-8-jdk 
 
 
 #./setup_networking.sh
