@@ -31,6 +31,7 @@ apt-get install -y bc hwloc
 apt-get install -y hwloc
 apt-get install -y numactl
 apt-get install -y mdadm 
+apt-get install -y ipmitool
 #apt-get install -y ioping
 #apt-get install -y r-base 
 #apt-get install -y maven # sometimes
